@@ -39,25 +39,28 @@ h4 {
 }
 
 .left-div img {
-    width: 539.22px ;
-    height: 447.43px ;
+    width: 539.22px;
+    height: 447.43px;
     /* top: 265px ;
     left: 77px; */
     margin-left: 130px;
 }
-.right-div{
+
+.right-div {
     height: 100%;
     width: 50%;
-    margin-right: 110px; 
+    margin-right: 110px;
 }
-.right-div h1{
+
+.right-div h1 {
     font-size: 70px;
     font-family: Space Mono;
     font-weight: 700;
     color: #333333;
     ;
 }
-.right-div p{
+
+.right-div p {
     height: 141px;
     width: 419px;
     font-family: Space Mono;
@@ -67,7 +70,8 @@ h4 {
     font-weight: 400;
     padding-top: 20px;
 }
-.btn{
+
+.btn {
     height: 70px;
     width: 220px;
     background-color: #333333;
@@ -77,7 +81,77 @@ h4 {
     font-size: 16px;
     margin-top: 65px;
 }
-.blank{
+
+.blank {
     height: 500px;
     width: 100vw;
+}
+
+@media screen and (max-width:1471px) {
+    .left-div img {
+        height: 539;
+        width: 447px;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .left-div img {
+        height: 300px;
+        width: 400px;
+        margin-left: -110px;
+    }
+
+    .right-div h1 {
+        font-size: 45px;
+
+    }
+
+    .right-div {
+        margin-left: -130px;
+    }
+
+    .right-div p {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .container{
+        overflow-x: hidden;
+
+    }
+    h4 {
+        width: 133px;
+        height: 25px;
+    }
+
+    .main {
+        height: 600px;
+        width: 500px;
+    }
+
+    .left-div img {
+        height: 300px;
+        width: 350px;
+        margin-left: -106px;
+    }
+
+    .right-div h1 {
+        height: 200px;
+        width: 331px;
+        margin-left: 38px;
+    }
+
+    .right-div p {
+        margin-left: 44px;
+    }
+    .btn{
+        margin-left: 44px;
+    }
+
 }
